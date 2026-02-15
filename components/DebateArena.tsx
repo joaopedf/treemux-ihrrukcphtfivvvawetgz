@@ -142,7 +142,7 @@ export default function DebateArena({ topic, onBack }: DebateArenaProps) {
           <h2 className="text-xl font-bold mb-4">Debate History</h2>
           <div className="space-y-4">
             {messages.map((message, index) => {
-              const participant = PARTICIPANTS.find(p => p.participantId === message.participantId);
+              const participant = PARTICIPANTS.find(p => p.id === message.participantId);
               return (
                 <div
                   key={message.id}
